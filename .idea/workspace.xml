@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="becd1b82-507f-4dc7-8e1a-64c444450d5a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-adding-auth-header-background.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-apiproblem-on-error.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-authentication-required-scenario.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-basic-new-token-implementation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-checking-for-password-validity.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-empty-token-controller-class.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-finish-listener-and-provider.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-look-for-application-problem-json-on-auth-problems.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-new-feature.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-protect-more-endpoints.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-requiring-a-valid-user-for-new-programmer.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-scenario-creating-a-token.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-scenario-for-bad-password.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-scenario-for-bad-token.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-show-simple-decoderequestbodyintoparameters.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-token-centralize-json-decode.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-token-new-routing.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-token-token-validation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-translating-the-error-message.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-unifying-apiproblem-to-response-process.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/auth-user-real-user-for-new-programmer.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-change-scenario-back.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-create-feature-and-post-scenario.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-exclusionpolicy.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-fix-location-header.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-get-collection-code.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-get-scenario.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-linking-to-programmer-url.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-post-code-implementation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-post-controller.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-print-last-response.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-scenario-temp-tweak-for-validation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/battle-validation-and-security.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/behat-adding-asserts-to-phpunit-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/behat-basic-phpunit-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/behat-basic-post-scenario.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/behat-clear-data-between-tests.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/behat-fill-in-phpunit-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/behat-list-and-show-tests.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/delete-programmer-implement-the-controller.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/delete-programmer-writing-the-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-apiproblem-type-constants.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-big-exceptions-for-debug.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-create-apiproblemexception.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-exception-listener-for-apiproblemexception.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-extra-information-on-error.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-handling-404-s.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-invalid-json-format.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-making-type-a-url.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-named-badrequesthttpexception.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-playing-with-validation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-print-bad-response-in-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-standard-apiproblem-class.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-standard-content-type.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-throw-apiproblemexception-on-validation-errors.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-using-on-update-and-refactoring.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/errors-write-test-for-missing-fields.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/filtering-adding-a-simple-filter.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-content-type.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-hardcoded-show-page.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-return-body-on-post.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-return-json-string-of-programmer.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-throw-404.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-total-endpoint-for-programmers.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-update-location-header.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-use-jsonresponse.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/get-programmer-use-location-header-in-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hal-browser-add-it.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hal-browser-updating-test-for-proper-programmers-collection.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hal-browser-use-collectionrepresentation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-basic-usage.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-better-embeded-scenario-step.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-embedded-links.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-first-self-link.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-fixing-syntax-errors.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-hal-media-type.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-install-library.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-linking-battle-to-programmer.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-using-a-better-step-for-checking-links.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/hateoas-using-a-router.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/homepage-add-a-nice-message.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/homepage-add-link-to-programmers.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/homepage-adding-title-attribute.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/homepage-basic-response.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/homepage-create-model-with-self.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/homepage-fix-api-url.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/pagination-adding-faked-pagination.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/pagination-adding-pagination-scenario.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/pagination-adding-real-simple-implementation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/patch-programmer-adding-the-controller.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/patch-programmer-write-the-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-201-status-code.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-create-endpoint.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-creating-and-saving-entity.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-dump-request-content.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-first-location-header.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-start-basic-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/post-programmer-update-test-with-post-data.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/programmer-battles-adding-link-to-battles.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/programmer-battles-adding-self-link-to-battle.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/programmer-battles-creating-scenario.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/programmer-battles-fixing-the-bad-route-param.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/programmer-battles-implementing-endpoint.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/put-programmer-create-put-endpoint.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/put-programmer-make-handlerequest-a-little-fancier.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/put-programmer-making-certain-properties-not-mutable.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/put-programmer-refactor-the-form-update-code.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/put-programmer-temporarily-making-the-test-fail.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/put-programmer-write-the-test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/serialize-central-method-for-response-creation.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/serialize-fixing-null-values.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/serialize-installing-serializer.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/serialize-using-serializer-service.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/serialize-whitelisting-properties.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_tuts/steps.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/ERRATA.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/application-problem.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/client-state.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/debugging-tests.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/delete.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/different-representations.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/error-404-json.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/error-api-problem-exception.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/error-consistency.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/error-details.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/error-invalid-json.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/errors.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/get-collection.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/get.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/http.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/includes/_post_programmer.rst.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/intro.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/location-header.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/metadata.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/patch.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/plan.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/post.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/project-routing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/put-editing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/put-improvements.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/put-versus-post.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/rest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/rest.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/rfcs.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/testing-data.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/testing-phpunit.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/testing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode1/whats-next.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/api-homepage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/authentication-error-format.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/authentication-via-token.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/battle-resource-feature.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/battle-resource-new.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/centralizing-error-response-creation.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/creating-tokens-in-the-api.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/embedded-resources.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/filtering.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/get-one-battle.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/hal-browser.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/hal-collection.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/hateoas-installation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/hateoas-linking.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/hateoas-router.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/hypermedia-media.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/link-all-the-resources.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/link-battle-programmer.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/metadata.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/pagination.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/requiring-authentication.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/rest2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/reuse-consistency.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/securing-more-endpoints.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/serializer-annotations.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/serializer-configuration.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/serializer.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode2/token-validation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode3/metadata.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode3/rest3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/knpu/episode3/tbd.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php" afterPath="$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing.php" afterPath="$PROJECT_DIR$/testing.php" />
+    </list>
+    <ignored path="rest.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="rest" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProgrammerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#50#96#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testing.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1796">
+              <caret line="286" column="39" selection-start-line="286" selection-start-column="21" selection-end-line="286" selection-end-column="39" />
+              <folding>
+                <element signature="e#35#84#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/BaseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4534">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixturesManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/DataFixtures/FixturesManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php" />
+        <option value="$PROJECT_DIR$/testing.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnpU" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeBattle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="becd1b82-507f-4dc7-8e1a-64c444450d5a" name="Default" comment="" />
+      <created>1459366726085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1459366726085</updated>
+      <workItem from="1459366727499" duration="4191000" />
+      <workItem from="1459453297890" duration="1122000" />
+      <workItem from="1459457645893" duration="1013000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6326000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#29#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#29#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knpu/episode1/application-problem.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/behat_defaults.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/BattleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/ProgrammerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2302">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/TokenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Controller/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4534">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/api/programmer.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/DataFixtures/FixturesManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#7#29#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnpU/CodeBattle/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1796">
+          <caret line="286" column="39" selection-start-line="286" selection-start-column="21" selection-end-line="286" selection-end-column="39" />
+          <folding>
+            <element signature="e#35#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
