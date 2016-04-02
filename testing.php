@@ -11,8 +11,15 @@ $client = new Client('http://localhost:8000', array(
     )
 ));
 
+$nickname= 'ObjectOrienter'.rand(0,999);
+$data = array(
+    'nickName' => $nickname,
+    'avatarNumber' => 5,
+    'tagLine' => 'a test dev'
+);
 
-$request = $client->post('/api/programmers');
+
+$request = $client->post('/api/programmers', null, json_encode($data));
 $response = $request->send();
 
 

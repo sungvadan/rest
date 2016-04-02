@@ -8,6 +8,7 @@ use Silex\ControllerCollection;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use KnpU\CodeBattle\Model\Programmer;
 
 class ProgrammerController extends BaseController
 {
@@ -16,9 +17,16 @@ class ProgrammerController extends BaseController
         $controllers->post('/api/programmers', array($this, 'newAction'));
     }
 
-    public function newAction()
+    public function newAction(Request $request)
     {
-        return "Let's Battle";
+        $data = json_decode($request->getContent(),true);
+        $programmer = new Programmer($data['nickName'],$data['avatarNumber']);
+        $programmer->tagLine = $data['tagLine'];
+        $programmer->userId = $this->findUserByUsername('weaverryan')->id;
+        $this->save($programmer);
+        $respone = new Response('It\'s worked',201);
+        $respone->headers->set('Location', 'some/programmer/url');
+        return $respone;
     }
 
 }
