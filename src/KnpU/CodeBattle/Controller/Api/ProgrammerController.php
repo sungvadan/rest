@@ -16,10 +16,11 @@ class ProgrammerController extends BaseController
     {
         $controllers->post('/api/programmers', array($this, 'newAction'));
         $controllers->get('/api/programmers', array($this, 'listAction'));
-        $controllers->get('/api/programmers/{nickname}', array($this, 'showAction'))
-            ->bind('api_programmers_show');
-        $controllers->put('/api/programmers/{nickname}', array($this, 'updateAction'))
-            ->bind('api_programmers_update');
+        $controllers->get('/api/programmers/{nickname}', array($this, 'showAction'))->bind('api_programmers_show');
+        $controllers->put('/api/programmers/{nickname}', array($this, 'updateAction'));
+        $controllers->match('/api/programmers/{nickname}', array($this, 'updateAction'))
+        ->method('PATCH');
+        $controllers->delete('/api/programmers/{nickname}', array($this, 'deleteAction'));
     }
 
     public function newAction(Request $request)
@@ -61,7 +62,15 @@ class ProgrammerController extends BaseController
         $response = new JsonResponse($data, 200);
         return $response;
     }
-
+    public function deleteAction($nickname)
+    {
+        $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
+        if (!$programmer) {
+            $this->throw404('Not Found');
+        }
+        $this->delete($programmer);
+        return new Response(null, 204);
+    }
     public function listAction()
     {
         $programmers = $this->getProgrammerRepository()->findAll();
@@ -92,17 +101,21 @@ class ProgrammerController extends BaseController
         if ($data === null) {
             throw new \Exception(sprintf('Invalid JSON: '.$request->getContent()));
         }
+        $apiProperties = array('avatarNumber', 'tagLine');
 
         $isNew = !$programmer->id;
         if($isNew){
-            $programmer->nickname = $data['nickname'];
+            $apiProperties[] = 'nickname';
         }
 
         // determine which properties should be changeable on this request
-        $apiProperties = array('avatarNumber', 'tagLine');
 
         // update the properties
         foreach ($apiProperties as $property) {
+            if($request->isMethod('PATCH') && !isset($data[$property])){
+                continue;
+            }
+
             $val = isset($data[$property]) ? $data[$property] : null;
             $programmer->$property = $val;
         }

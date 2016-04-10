@@ -62,3 +62,28 @@ Feature: Programmer
     Then the response status code should be 200
     And the "avatarNumber" property should equal "2"
     And the "nickname" property should equal "CowboyCoder"
+
+  Scenario: Delete a programmer
+    Given the following programmers exist:
+      | nickname    | avatarNumber | tagLine |
+      | UnitTester | 5            | foo     |
+    When I request "DELETE /api/programmers/UnitTester"
+    Then the response status code should be 204
+
+  Scenario: PATCH to edit a programmer
+    Given the following programmers exist:
+      | nickname    | avatarNumber | tagLine |
+      | CowboyCoder | 5            | foo     |
+    And I have the payload:
+    """
+    {
+      "tagLine" : "giddyup"
+    }
+    """
+    When I request "PATCH /api/programmers/CowboyCoder"
+  #And print last response
+    Then the response status code should be 200
+    And the "avatarNumber" property should equal "5"
+    And the "nickname" property should equal "CowboyCoder"
+    And the "tagLine" property should equal "giddyup"
+
