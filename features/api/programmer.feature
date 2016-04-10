@@ -10,7 +10,7 @@ Feature: Programmer
     Given I have the payload:
     """
     {
-      "nickName": "ObjectOrienter",
+      "nickname": "ObjectOrienter",
       "avatarNumber" : "2",
       "tagLine": "I'm from a test!"
     }
@@ -52,7 +52,7 @@ Feature: Programmer
     And I have the payload:
     """
     {
-      "nickName": "CowboyCoder",
+      "nickname": "CowboyCoder",
       "avatarNumber" : "2",
       "tagLine": "foo"
     }

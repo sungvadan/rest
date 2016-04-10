@@ -13,7 +13,7 @@ $client = new Client('http://localhost:8000', array(
 
 $nickname= 'ObjectOrienter'.rand(0,999);
 $data = array(
-    'nickName' => $nickname,
+    'nickname' => $nickname,
     'avatarNumber' => 5,
     'tagLine' => 'a test dev'
 );
