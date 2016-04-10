@@ -93,8 +93,13 @@ class ProgrammerController extends BaseController
             throw new \Exception(sprintf('Invalid JSON: '.$request->getContent()));
         }
 
+        $isNew = !$programmer->id;
+        if($isNew){
+            $programmer->nickname = $data['nickname'];
+        }
+
         // determine which properties should be changeable on this request
-        $apiProperties = array('nickname', 'avatarNumber', 'tagLine');
+        $apiProperties = array('avatarNumber', 'tagLine');
 
         // update the properties
         foreach ($apiProperties as $property) {
