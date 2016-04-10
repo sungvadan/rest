@@ -170,6 +170,12 @@ class ApiFeatureContext extends BehatContext
 
             foreach ($this->headers as $key => $val) {
                 $this->lastRequest->setHeader($key, $val);
+            }            if ($this->authUser) {
+                $this->lastRequest->setAuth($this->authUser, $this->authPassword);
+            }
+
+            foreach ($this->headers as $key => $val) {
+                $this->lastRequest->setHeader($key, $val);
             }
 
             $this->response = $this->lastRequest->send();
