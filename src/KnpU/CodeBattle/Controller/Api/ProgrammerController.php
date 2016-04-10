@@ -35,7 +35,9 @@ class ProgrammerController extends BaseController
                 'errors' => $errors
             );
 
-            return new JsonResponse($data, 400);
+            $response =  new JsonResponse($data, 400);
+            $response->headers->set('Content-Type','application/problem+json');
+            return $response;
         }
 
         $this->save($programmer);
@@ -48,7 +50,7 @@ class ProgrammerController extends BaseController
 
     public function updateAction(Request $request, $nickname)
     {
-        # throw new \Exception('you code somthing wrong');
+        # throw new \Exception('you code something wrong');
         $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
         if (!$programmer) {
             $this->throw404('Not Found');
