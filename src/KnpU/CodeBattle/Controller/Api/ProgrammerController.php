@@ -18,6 +18,8 @@ class ProgrammerController extends BaseController
         $controllers->get('/api/programmers', array($this, 'listAction'));
         $controllers->get('/api/programmers/{nickname}', array($this, 'showAction'))
             ->bind('api_programmers_show');
+        $controllers->put('/api/programmers/{nickname}', array($this, 'updateAction'))
+            ->bind('api_programmers_update');
     }
 
     public function newAction(Request $request)
@@ -31,6 +33,23 @@ class ProgrammerController extends BaseController
         $response = new JsonResponse($data, 201);
         $url = $this->generateUrl('api_programmers_show', ['nickname' => $programmer->nickname]);
         $response->headers->set('Location', $url);
+        return $response;
+    }
+
+    public function updateAction(Request $request, $nickname)
+    {
+        $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
+        if (!$programmer) {
+            $this->throw404('Not Found');
+        }
+        $data = json_decode($request->getContent(), true);
+        $programmer->nickname = $data['nickName'];
+        $programmer->avatarNumber = $data['avatarNumber'];
+        $programmer->tagLine = $data['tagLine'];
+        $programmer->userId = $this->findUserByUsername('weaverryan')->id;
+
+        $this->save($programmer);
+        $response = new JsonResponse($data, 200);
         return $response;
     }
 
