@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use KnpU\CodeBattle\Model\Programmer;
+use KnpU\CodeBattle\Api\ApiProblem;
 
 class ProgrammerController extends BaseController
 {
@@ -19,7 +20,7 @@ class ProgrammerController extends BaseController
         $controllers->get('/api/programmers/{nickname}', array($this, 'showAction'))->bind('api_programmers_show');
         $controllers->put('/api/programmers/{nickname}', array($this, 'updateAction'));
         $controllers->match('/api/programmers/{nickname}', array($this, 'updateAction'))
-        ->method('PATCH');
+            ->method('PATCH');
         $controllers->delete('/api/programmers/{nickname}', array($this, 'deleteAction'));
     }
 
@@ -29,15 +30,7 @@ class ProgrammerController extends BaseController
         $this->handleRequest($request, $programmer);
         $errors = $this->validate($programmer);
         if (!empty($errors)) {
-            $data = array(
-                'type' => 'validation_error',
-                'title' => 'There was a validation error',
-                'errors' => $errors
-            );
-
-            $response =  new JsonResponse($data, 400);
-            $response->headers->set('Content-Type','application/problem+json');
-            return $response;
+            return $this->handleValidationResponse($errors);
         }
 
         $this->save($programmer);
@@ -56,6 +49,10 @@ class ProgrammerController extends BaseController
             $this->throw404('Not Found');
         }
         $this->handleRequest($request, $programmer);
+        $errors = $this->validate($programmer);
+        if (!empty($errors)) {
+            return $this->handleValidationResponse($errors);
+        }
         $this->save($programmer);
         $data = $this->serializeProgrammer($programmer);
         $response = new JsonResponse($data, 200);
@@ -77,6 +74,7 @@ class ProgrammerController extends BaseController
         $response = new JsonResponse($data, 200);
         return $response;
     }
+
     public function deleteAction($nickname)
     {
         $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
@@ -86,6 +84,7 @@ class ProgrammerController extends BaseController
         $this->delete($programmer);
         return new Response(null, 204);
     }
+
     public function listAction()
     {
         $programmers = $this->getProgrammerRepository()->findAll();
@@ -114,12 +113,12 @@ class ProgrammerController extends BaseController
         $data = json_decode($request->getContent(), true);
 
         if ($data === null) {
-            throw new \Exception(sprintf('Invalid JSON: '.$request->getContent()));
+            throw new \Exception(sprintf('Invalid JSON: ' . $request->getContent()));
         }
         $apiProperties = array('avatarNumber', 'tagLine');
 
         $isNew = !$programmer->id;
-        if($isNew){
+        if ($isNew) {
             $apiProperties[] = 'nickname';
         }
 
@@ -127,7 +126,7 @@ class ProgrammerController extends BaseController
 
         // update the properties
         foreach ($apiProperties as $property) {
-            if($request->isMethod('PATCH') && !isset($data[$property])){
+            if ($request->isMethod('PATCH') && !isset($data[$property])) {
                 continue;
             }
 
@@ -137,6 +136,21 @@ class ProgrammerController extends BaseController
 
         $programmer->userId = $this->findUserByUsername('weaverryan')->id;
 
+    }
+
+    private function handleValidationResponse(array $errors)
+    {
+        $apiProblem = new ApiProblem(
+            400,
+            ApiProblem::TYPE_VALIDATION_ERROR
+        );
+        $apiProblem->set('errors', $errors);
+        $response = new JsonResponse(
+            $apiProblem->toArray(),
+            $apiProblem->getStatusCode()
+        );
+        $response->headers->set('Content-Type', 'application/problem+json');
+        return $response;
     }
 
 }
