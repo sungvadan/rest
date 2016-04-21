@@ -10,7 +10,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use KnpU\CodeBattle\Model\Programmer;
 use KnpU\CodeBattle\Api\ApiProblem;
-
+use Symfony\Component\HttpKernel\Exception\HttpException;
+use KnpU\CodeBattle\Api\ApiProblemException;
 class ProgrammerController extends BaseController
 {
     protected function addRoutes(ControllerCollection $controllers)
@@ -30,7 +31,7 @@ class ProgrammerController extends BaseController
         $this->handleRequest($request, $programmer);
         $errors = $this->validate($programmer);
         if (!empty($errors)) {
-            return $this->handleValidationResponse($errors);
+            $this->throwApiProblemValidationException($errors);
         }
 
         $this->save($programmer);
@@ -51,7 +52,7 @@ class ProgrammerController extends BaseController
         $this->handleRequest($request, $programmer);
         $errors = $this->validate($programmer);
         if (!empty($errors)) {
-            return $this->handleValidationResponse($errors);
+            $this->throwApiProblemValidationException($errors);
         }
         $this->save($programmer);
         $data = $this->serializeProgrammer($programmer);
@@ -113,7 +114,12 @@ class ProgrammerController extends BaseController
         $data = json_decode($request->getContent(), true);
 
         if ($data === null) {
-            throw new \Exception(sprintf('Invalid JSON: ' . $request->getContent()));
+            $problem = new ApiProblem(
+                400,
+                ApiProblem::TYPE_INVALID_REQUEST_BODY_FORMAT
+            );
+
+            throw new ApiProblemException($problem);
         }
         $apiProperties = array('avatarNumber', 'tagLine');
 
@@ -137,20 +143,16 @@ class ProgrammerController extends BaseController
         $programmer->userId = $this->findUserByUsername('weaverryan')->id;
 
     }
-
-    private function handleValidationResponse(array $errors)
+    
+    private function throwApiProblemValidationException(array $errors)
     {
         $apiProblem = new ApiProblem(
             400,
             ApiProblem::TYPE_VALIDATION_ERROR
         );
         $apiProblem->set('errors', $errors);
-        $response = new JsonResponse(
-            $apiProblem->toArray(),
-            $apiProblem->getStatusCode()
-        );
-        $response->headers->set('Content-Type', 'application/problem+json');
-        return $response;
+
+        throw new ApiProblemException($apiProblem);
     }
 
 }
